@@ -1,0 +1,26 @@
+.ruby-progress{
+    background-color: #ec1622 !important;
+    width:70%;
+}
+.js-progress{
+    background-color: #D8B847 !important;
+    width:70%;
+}
+.py-progress{
+    background-color: #009CBC !important;
+    width:70%;
+}
+
+#coreLang {
+    width: 100%;
+    height: 40vh;
+  }
+
+#framework {
+    width: 100%;
+    height: 40vh;
+  }
+  #database {
+    width: 100%;
+    height: 40vh;
+  }

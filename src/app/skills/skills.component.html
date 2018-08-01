@@ -7,31 +7,55 @@
       </div>
     </div>
     <div class="row text-center">
-      <div class="col-md-4">
+      <div class="col-md-3">
         <span class="fa-stack fa-4x">
           <img class="rounded-circle img-fluid" src="assets/images/langs/ruby.png" alt="">
         </span>
         <h4 class="service-heading">Ruby</h4>
+        <div class="progress">
+          <div class="progress-bar ruby-progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
           dicta impedit.</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <span class="fa-stack fa-4x">
           <img class="rounded-circle img-fluid" src="assets/images/langs/javascript.png" alt="">
         </span>
         <h4 class="service-heading">Javascript</h4>
+        <div class="progress">
+          <div class="progress-bar js-progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
           dicta impedit.</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <span class="fa-stack fa-4x">
           <img class="rounded-circle img-fluid" src="assets/images/langs/python.png" alt="">
         </span>
         <h4 class="service-heading">Python </h4>
+        <div class="progress">
+          <div class="progress-bar py-progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          </div>
+        </div>
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
           dicta impedit.</p>
       </div>
+      <div class="col-md-3">
+        <div id="coreLang"></div>
+      </div>
     </div>
+    <!-- <div class="row text-center"> -->
+    <!-- <div class="col-md-2"></div>
+      <div class="col-md-8">
+          <div id="chartdiv"></div>
+      </div>
+      <div class="col-md-2"></div> -->
+
+    <!-- </div> -->
+
     <br>
     <br>
     <div class="row">
@@ -41,7 +65,7 @@
       </div>
     </div>
     <div class="row text-center">
-      <div class="col-md-4">
+      <div class="col-md-3">
         <span class="fa-stack fa-4x">
           <img class="rounded-circle img-fluid" src="assets/images/langs/ror.jpeg" alt="">
         </span>
@@ -49,7 +73,7 @@
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
           dicta impedit.</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <span class="fa-stack fa-4x">
           <img class="rounded-circle img-fluid" src="assets/images/langs/angular.png" alt="">
         </span>
@@ -57,7 +81,7 @@
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
           dicta impedit.</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <span class="fa-stack fa-4x">
           <img class="rounded-circle img-fluid" src="assets/images/langs/ionic.jpeg" alt="">
         </span>
@@ -65,9 +89,7 @@
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
           dicta impedit.</p>
       </div>
-    </div>
-    <div class="row text-center">
-      <div class="col-md-4">
+      <div class="col-md-3">
         <span class="fa-stack fa-4x">
           <img class="rounded-circle img-fluid" src="assets/images/langs/ts.png" alt="">
         </span>
@@ -75,13 +97,20 @@
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
           dicta impedit.</p>
       </div>
-      <div class="col-md-4">
+    </div>
+    <div class="row text-center">
+
+      <div class="col-md-3">
         <span class="fa-stack fa-4x">
           <img class="rounded-circle img-fluid" src="assets/images/langs/django.png" alt="">
         </span>
         <h4 class="service-heading">Django</h4>
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
           dicta impedit.</p>
+      </div>
+
+      <div class="col-md-9">
+        <div id="framework"></div>
       </div>
     </div>
 
@@ -92,15 +121,7 @@
       </div>
     </div>
     <div class="row text-center">
-      <div class="col-md-4">
-        <span class="fa-stack fa-4x">
-          <img class="rounded-circle img-fluid" src="assets/images/langs/psql.png" alt="">
-        </span>
-        <h4 class="service-heading">PostgreSQL</h4>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
-          dicta impedit.</p>
-      </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <span class="fa-stack fa-4x">
           <img class="rounded-circle img-fluid" src="assets/images/langs/mysql.png" alt="">
         </span>
@@ -108,13 +129,24 @@
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
           dicta impedit.</p>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
+        <span class="fa-stack fa-4x">
+          <img class="rounded-circle img-fluid" src="assets/images/langs/psql.png" alt="">
+        </span>
+        <h4 class="service-heading">PostgreSQL</h4>
+        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
+          dicta impedit.</p>
+      </div>
+      <div class="col-md-3">
         <span class="fa-stack fa-4x">
           <img class="rounded-circle img-fluid" src="assets/images/langs/mongo.png" alt="">
         </span>
         <h4 class="service-heading">MongoDB</h4>
         <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni,
           dicta impedit.</p>
+      </div>
+      <div class="col-md-3">
+        <div id="database"></div>
       </div>
     </div>
 

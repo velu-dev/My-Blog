@@ -10,7 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { SocialComponent } from './social/social.component';
 import { ContactComponent } from './contact/contact.component';
 import { ExperianceComponent } from './experiance/experiance.component';
-
+import { AmChartsModule } from "@amcharts/amcharts3-angular";
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import { ExperianceComponent } from './experiance/experiance.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AppBootstrapModule
+    AppBootstrapModule,
+    AmChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
