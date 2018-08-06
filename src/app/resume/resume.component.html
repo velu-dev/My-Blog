@@ -1,0 +1,167 @@
+<section id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading text-uppercase">Velusamy Venkatraman</h2>
+        <h3 class="section-subheading text-muted">Software Engineer at Angler Technologies.</h3>
+      </div>
+    </div>
+    <!-- <div class="card"></div> -->
+    <div class="row">
+      <div class="col-md-6 card">
+        <div class="row">
+          <span class="fa-stack fa-4x picture margin-center">
+            <img class="rounded-circle img-fluid" src="assets/images/my.jpg" alt="">
+          </span>
+        </div>
+        <!-- <div class="row">
+          <h4 class="row service-heading margin-center">MySQL</h4>
+          <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
+            magni, dicta impedit.</p>
+        </div> -->
+      </div>
+      <div class="col-md-6 card">
+        <h5 class="service-heading">Velusamy Venkatraman</h5>
+        <p class="text-muted">veerappanayakkanpatty, (P.O) and (Vill).</p>
+        <p class="text-muted">Harur, (T.K).</p>
+        <p class="text-muted">Dharmapuri, (D.T).</p>
+        <p class="text-muted">636906.</p>
+        <div class="row">
+          <h6 class="text-muted">Email</h6>&nbsp;
+          <h6 class="text-muted">:</h6>&nbsp;&nbsp;
+          <h6 class="text-muted">
+            <a href="mailto:velusamyvenkatraman@gmail.com">
+              <i>velusamyvenlatraman@gmail.com</i>
+            </a>
+          </h6>
+        </div>
+        <div class="row">
+          <h6 class="text-muted">Mobile</h6>&nbsp;
+          <h6 class="text-muted">:</h6>&nbsp;&nbsp;
+          <h6 class="text-muted">
+            <!-- <a href="mailto:velusamyvenkatraman@gmail.com"> -->
+            7397136939
+            <!-- </a> -->
+          </h6>
+        </div>
+      </div>
+    </div>
+    <div class="row summary">
+      <div class="col-md-12 card">
+
+        <h3 class="summaery-legent text-center">
+          <legend>Summary</legend>
+        </h3>
+        <p class="text-center">I am a Full Stack Developer, Ops Practitioner, working in a company where i handle new technology stacks to fulfill
+          the application needs. Interested in IOT. Looking for a career to serve best with my skill sets.
+        </p>
+      </div>
+      <div class="col-lg-12 card">
+        <h3 class="summaery-legent text-center">
+          <legend>Work experience - Skills Base</legend>
+        </h3>
+        <div id="experiance">
+
+        </div>
+      </div>
+      <div class="col-lg-12 card">
+        <h3 class="summaery-legent text-center">
+          <legend>Work experience - Company Base</legend>
+        </h3>
+        <div id="experiance-company">
+
+        </div>
+      </div>
+
+      <div class="col-lg-12 card">
+        <h3 class="summaery-legent text-center">
+          <legend>Education</legend>
+        </h3>
+        <div id="education">
+
+        </div>
+      </div>
+
+      <div class="col-lg-12 card">
+        <h3 class="summaery-legent text-center">
+          <legend>Projects</legend>
+        </h3>
+
+        <div class="row" *ngFor="let project of projectData, let i = index">
+
+          <div *ngIf="oddEven(i) == 1" class="col-md-6 card">
+            <h4 class="service-heading margin-center">{{project.name}}</h4>
+            <span class="row fa-stack fa-4x margin-center">
+              <img class="rounded-circle img-fluid" src={{project.image}} alt={{project.image[0]}}>
+            </span>
+            <br>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
+              magni, dicta impedit.</p>
+          </div>
+          <div *ngIf="oddEven(i) == 1" class="col-md-6 card">
+            <div id={{project.project}}>
+            </div>
+          </div>
+          <div *ngIf="oddEven(i) != 1" class="col-md-6 card">
+            <div id={{project.project}}>
+
+            </div>
+          </div>
+          <div *ngIf="oddEven(i) != 1" class="col-md-6 card">
+            <h4 class="service-heading margin-center">{{project.name}}</h4>
+            <span class="row fa-stack fa-4x margin-center">
+              <img class="rounded-circle img-fluid" src={{project.image}} alt={{project.image[0]}}>
+            </span>
+            <br>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
+              magni, dicta impedit.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-12 card">
+        <h3 class="summaery-legent text-center">
+          <legend>Areas of Intrest</legend>
+        </h3>
+        <div class="row">
+          <div class="col-md-3 card">
+            <span class="fa-stack fa-4x margin-center">
+              <img class="rounded-circle img-fluid" src="assets/images/int/mobile.png" alt="">
+            </span>
+            <h4 class="service-heading">Mobile Application</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
+              magni, dicta impedit.</p>
+          </div>
+          <div class="col-md-3 card">
+              <span class="fa-stack fa-4x margin-center">
+                <img class="rounded-circle img-fluid" src="assets/images/int/web.png" alt="">
+              </span>
+              <h4 class="service-heading">Web Application</h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
+                magni, dicta impedit.</p>
+            </div>
+          <div class="col-md-3 card">
+            <span class="fa-stack fa-4x  margin-center">
+              <img class="rounded-circle img-fluid" src="assets/images/int/ruby.png" alt="">
+            </span>
+            <h4 class="service-heading">Ruby Gems</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
+              magni, dicta impedit.</p>
+          </div>
+          
+          <div class="col-md-3 card">
+            <span class="fa-stack fa-4x margin-center">
+              <img class="rounded-circle img-fluid" src="assets/images/int/iot.png" alt="">
+            </span>
+            <h4 class="service-heading">Internet of Things</h4>
+            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex
+              magni, dicta impedit.</p>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>

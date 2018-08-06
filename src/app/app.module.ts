@@ -1,3 +1,4 @@
+import { mySkills } from './resume/skills';
 import { AppBootstrapModule } from './app-bootstrap/app-bootstrap.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,7 @@ import { SocialComponent } from './social/social.component';
 import { ContactComponent } from './contact/contact.component';
 import { ExperianceComponent } from './experiance/experiance.component';
 import { AmChartsModule } from "@amcharts/amcharts3-angular";
+import { ResumeComponent } from './resume/resume.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +21,8 @@ import { AmChartsModule } from "@amcharts/amcharts3-angular";
     SkillsComponent,
     SocialComponent,
     ContactComponent,
-    ExperianceComponent
+    ExperianceComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,7 @@ import { AmChartsModule } from "@amcharts/amcharts3-angular";
     AppBootstrapModule,
     AmChartsModule
   ],
-  providers: [],
+  providers: [mySkills],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
