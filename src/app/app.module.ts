@@ -2,6 +2,7 @@ import { mySkills } from './resume/skills';
 import { AppBootstrapModule } from './app-bootstrap/app-bootstrap.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -26,6 +27,7 @@ import { ResumeComponent } from './resume/resume.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     AppBootstrapModule,
     AmChartsModule

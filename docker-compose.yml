@@ -1,0 +1,6 @@
+version: '3'
+
+services: 
+ my-profile:
+         build: ./dist/my-profile
+         ports: [5001]

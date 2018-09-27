@@ -9,25 +9,25 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav text-uppercase ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#home">Home</a>
+                    <a class="nav-link js-scroll-trigger" [routerLink]="['/home']">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                    <a class="nav-link js-scroll-trigger" [routerLink]="['/skills']">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                    <a class="nav-link js-scroll-trigger" [routerLink]="['/education']">Education</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#experiance">Experiance</a>
+                    <a class="nav-link js-scroll-trigger" [routerLink]="['/experiance']">Experiance</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#social">Social Media</a>
+                    <a class="nav-link js-scroll-trigger" [routerLink]="['/social']">Social Media</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    <a class="nav-link js-scroll-trigger" [routerLink]="['/contact']">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="resume-button btn btn-secondary nav-link js-scroll-trigger" href="#resume">Resume</a>
+                    <a class="resume-button btn btn-secondary nav-link js-scroll-trigger" [routerLink]="['/skills']">Resume</a>
                 </li>
             </ul>
         </div>
@@ -35,13 +35,13 @@
 </nav>
 
 <style>
-.resume-button{
-    
-    border: 3px solid #36383F;
-    background: #607D8B;
-    height: 54px;
-    border-radius: 21px;
-}
+    .resume-button {
+
+        border: 3px solid #36383F;
+        background: #607D8B;
+        height: 54px;
+        border-radius: 21px;
+    }
 </style>
 <router-outlet></router-outlet>
 
@@ -54,6 +54,11 @@
             <div class="col-md-4">
                 <ul class="list-inline social-buttons">
                     <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/velusamy-venkatraman-963941b2/" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
                         <a href="#">
                             <i class="fa fa-twitter"></i>
                         </a>
@@ -64,8 +69,18 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fa fa-linkedin"></i>
+                        <a href="https://medium.com/@velusamyvnp" target="_blank">
+                            <i class="fa fa-medium"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/velu-dev" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://stackoverflow.com/users/8036445/velu-dhanesh?tab=profile" target="_blank">
+                            <i class="fa fa-stack-overflow"></i>
                         </a>
                     </li>
                 </ul>
