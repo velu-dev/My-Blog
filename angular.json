@@ -20,13 +20,26 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.js",
+              "src/assets/js/amcharts.js",
+              "src/assets/js/animate.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/gauge.js",
+              "src/assets/js/light.js",
+              "src/assets/js/pie.js",
+              "src/assets/js/popper.js",
+              "src/assets/js/serial.js",
+              "src/assets/js/xy.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -44,7 +57,8 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "serviceWorker": true
             }
           }
         },
@@ -78,7 +92,8 @@
             "scripts": [],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.json"
             ]
           }
         },

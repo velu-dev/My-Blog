@@ -14,6 +14,11 @@ import { ContactComponent } from './contact/contact.component';
 import { ExperianceComponent } from './experiance/experiance.component';
 import { AmChartsModule } from "@amcharts/amcharts3-angular";
 import { ResumeComponent } from './resume/resume.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +35,9 @@ import { ResumeComponent } from './resume/resume.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     AppBootstrapModule,
-    AmChartsModule
+    AmChartsModule,
+    AngularFontAwesomeModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [mySkills],
   bootstrap: [AppComponent]
